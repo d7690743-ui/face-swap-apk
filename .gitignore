@@ -1,0 +1,20 @@
+# Modelos (se descargan en runtime, ~800 MB: nunca al repo)
+models/*.onnx
+models/
+app_python/models/
+uploads/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Android / Gradle
+.gradle/
+/build/
+/app/build/
+/local.properties
+/.idea/
+*.iml
+.DS_Store
