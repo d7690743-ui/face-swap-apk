@@ -44,12 +44,18 @@ python app.py swap fuente.jpg destino.jpg salida.jpg   # descarga lo que falte
 Colocación manual si la descarga falla: ver `app_python/README_MODELOS.md`.
 En Android irían a `/data/data/com.example.faceswap/files/models/`.
 
-Backend para el móvil (en el PC, mismo WiFi):
+Backend para el móvil (en el PC, mismo WiFi que el teléfono):
 
 ```bash
 cd app_python
+pip install -r requirements.txt
 python app.py serve --port 5000   # POST /swap con archivos source+target
 ```
+
+En la app escribe la URL de tu PC (ej: `http://192.168.1.100:5000`;
+averigua tu IP con `ipconfig` en Windows o `ip a` en Linux), elige
+las 2 fotos y pulsa Swap. El swap en CPU tarda minutos; permite el
+puerto 5000 en el firewall del PC.
 
 ## Compilar el APK en local
 

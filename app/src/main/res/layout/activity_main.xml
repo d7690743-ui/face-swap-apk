@@ -45,12 +45,35 @@
             android:layout_height="wrap_content"
             android:text="Elegir foto destino" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Backend (PC con app.py serve):" />
+
+        <EditText
+            android:id="@+id/backend_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="http://192.168.1.100:5000"
+            android:inputType="textUri"
+            android:textSize="14sp" />
+
         <Button
             android:id="@+id/swap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Swap" />
+
+        <ImageView
+            android:id="@+id/result_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:background="#22000000"
+            android:contentDescription="Resultado"
+            android:scaleType="fitCenter" />
 
         <TextView
             android:id="@+id/status"
